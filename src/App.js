@@ -28,8 +28,12 @@ export default function App() {
       <h3>Emojis we know</h3>
       {emojis.map((emoji) => {
         return (
-          <span key={emoji} onClick={() => clickHandler(emoji)}>
-            {emoji}{" "}
+          <span
+            key={emoji}
+            onClick={() => clickHandler(emoji)}
+            style={{ fontSize: "larger", padding: "10px" }}
+          >
+            {emoji}
           </span>
         );
       })}
